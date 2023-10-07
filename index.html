@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ENTROPY-23</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/loading.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+
+    <!-- TAGLINE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <!-- NEW TAGLINE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+
+    <!-- DATE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet">
+
+    <!-- NEW DATE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kreon:wght@500&display=swap" rel="stylesheet">
+
+  </head>
+  <body style="margin: 0%;">
+
+    <div id="preloader" style="margin-top: 0;">
+
+    </div>
+    <img src="videos/backGround.svg" alt="Animated Bubbles" id="animated-background">
+    <div class="whole_body" style="text-align: center; align-items: center;">
+      
+      <div class="event_name container-fluid justify-content-center animation" style="align-items: center; margin: 5% auto 0; display: flex; flex-wrap: wrap;">
+        <div class="entropy col col-sm-12 col-md-4" style="color: white; text-align: center; width: auto; margin: 0 1%;">
+          <h1 class="heading " id="slider" style="font-size: 6rem; font-family: 'Acme', sans-serif;">
+            ENTROPY
+          </h1>
+        </div>
+  
+        <div class="entropy col col-sm-12 col-md-4" style="color: wheat; text-align: center; width: auto; margin: 0 2%;">
+          <!-- <h1 class="heading " id="middleX" style="font-size: 11rem; font-family: 'Black Ops One', cursive; color: wheat;">
+            X
+          </h1> -->
+          <img src="logo/Untitled_design__1_-removebg-preview.png" id="middleX" style="width: 15rem; height: 15rem;" alt="X">
+        </div>
+  
+        <div class="entropy col col-sm-12 col-md-4" style="color: white; text-align: center; width: auto; margin: 0 1%;">
+          <h1 class="heading " id="slidel" style="font-size: 6rem; font-family: 'Acme', sans-serif;">
+            E-SUMMIT
+          </h1>
+        </div>
+      </div>
+
+      <div class="" id="tag">
+        <h3 class="tagLine" id="line_tag" style="color: white; font-family: 'Yatra One', cursive; font-size: 2.5rem;">Something is Brewing...</h3>
+      </div>
+
+      <div class="date_reveal" style="margin-top: 10%; margin-bottom: 2%;">
+        <h3 class="date" style="color: wheat; font-family: 'Kreon', serif; font-size: 2.5rem;"><span class="" id="rev1">03-05</span> <span class="" id="rev2">November,</span> <span class="" id="rev3">2023.</span></h3>
+      </div>
+      
+      <div class="" id="button_rev">
+        <a href="html/home.html" style="--clr:#1e9bff" onmouseover="changehtml()" onmouseleave="rechangehtml()">
+          <span>VIEW MORE</span>
+          <i></i>
+        </a>
+      </div>
+      
+      <div class="extra" style="display: none;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/CJV3OyzcLEk?si=yv-XrkhTXBQuRuqF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/CJV3OyzcLEk?si=yv-XrkhTXBQuRuqF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="js_final/loading.js"></script>
+
+
+    <script>
+      let loader = document.getElementById("preloader");
+      let slider = document.getElementById("slider");
+      let slidel = document.getElementById("slidel");
+      let middleX = document.getElementById("middleX");
+      let tag = document.getElementById("tag");
+      let rev1 = document.getElementById("rev1");
+      let rev2 = document.getElementById("rev2");
+      let rev3 = document.getElementById("rev3");
+      let button_rev = document.getElementById("button_rev");
+      window.addEventListener("load", function(){
+        loader.style.display = "none";
+        slider.classList.add("slide_right");
+        slidel.classList.add("slide_left");
+        middleX.classList.add("first");
+        tag.classList.add("tag_line");
+        rev1.classList.add("reveal1");
+        rev2.classList.add("reveal1");
+        rev3.classList.add("reveal1");
+        button_rev.classList.add("button_reveal");
+      })
+    </script>
+  </body>
+</html>

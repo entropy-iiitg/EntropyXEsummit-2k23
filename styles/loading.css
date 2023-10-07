@@ -1,0 +1,287 @@
+body {
+  background-color: black;
+}
+
+#animated-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: background 10s infinite; /* Add animation properties */
+}
+
+.first{
+  animation-duration: 1s;
+  animation-name: fadeout;
+  text-shadow: 0 0 20px white;
+}
+
+.slide_right{
+  animation-duration: 2.5s;
+  animation-name: slide_right;
+  text-shadow: 0 0 10px white;
+}
+
+.slide_left{
+  animation-duration: 2.5s;
+  animation-name: slide_left;
+  text-shadow: 0 0 10px white;
+}
+
+.tag_line{
+  animation-duration: 4s;
+  animation-name: fadeout2;
+}
+
+.reveal1{
+  animation-duration: 5s;
+  animation-name: fadeout3;
+}
+
+.reveal2{
+  animation-duration: 6s;
+  animation-name: fadeout3;
+}
+
+.reveal3{
+  animation-duration: 7s;
+  animation-name: fadeout3;
+}
+
+.button_reveal{
+  animation-duration: 6s;
+  animation-name: fadeout4;
+}
+
+@keyframes fadeout4 {
+  0%{
+    opacity: calc(0);
+  }
+  25%{
+    opacity: calc(0);
+  }
+  50%{
+    opacity: calc(0);
+  }
+  66%{
+    opacity: calc(0);
+  }
+  100%{
+    opacity: calc(1);
+  }
+}
+
+@keyframes fadeout2 {
+  0%{
+    opacity: calc(0);
+  }
+  25%{
+    opacity: calc(0);
+  }
+  50%{
+    opacity: calc(0);
+  }
+  66%{
+    opacity: calc(0);
+  }
+  100%{
+    opacity: calc(1);
+  }
+}
+
+@keyframes fadeout3 {
+  0%{
+    opacity: calc(0);
+  }
+  25%{
+    opacity: calc(0);
+  }
+  50%{
+    opacity: calc(0);
+  }
+  66%{
+    opacity: calc(0);
+  }
+  100%{
+    opacity: calc(1);
+  }
+}
+
+@keyframes fadeout {
+  0%{
+    opacity: calc(0);
+  }
+  50%{
+    opacity: calc(0);
+  }
+  100%{
+    opacity: calc(1);
+  }
+}
+
+@keyframes slide_right {
+  0%{
+    opacity: calc(0);
+  }
+  25%{
+    opacity: calc(0);
+  }
+  50%{
+    opacity: calc(0);
+    margin-right: -50%;
+  }
+  100%{
+    margin-left: 0;
+    opacity: calc(1);
+  }
+}
+
+@keyframes slide_left {
+  0%{
+    opacity: calc(0);
+  }
+  25%{
+    opacity: calc(0);
+  }
+  50%{
+    opacity: calc(0);
+    margin-left: -50%;
+  }
+  100%{
+    margin-left: 0;
+    opacity: calc(1);
+  }
+}
+
+/* Animated Video Starts*/
+.back_video{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .back_video{
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .back_video{
+    width: auto;
+    height: 100%;
+  }
+}
+/* Animated Video End */
+
+
+
+/* BUTTON START */
+a {
+  position: relative;
+  background: slategray;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  padding: 10px 30px;
+  transition: 0.5s;
+  /* border-radius: 10px;  */
+  margin-top: 2.5%;
+}
+
+a:hover {
+  letter-spacing: 0.25em;
+  background: var(--clr);
+  color: var(--clr);
+  box-shadow: 0 0 35px var(--clr);
+  border-radius: 10px; 
+}
+
+a::before {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background: #07031e;
+  border-radius: 10px;
+}
+
+a span {
+  position: relative;
+  z-index: 1;
+}
+
+a i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+a i::before,
+a i::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 15px;
+  background: lightblue;
+  border-radius: 50%;
+  transition: 0.5s;
+  border: 2px solid white;
+}
+
+a i::before {
+  top: -7.5px;
+  left: 80%;
+  transform: translate(-50%);
+}
+
+a:hover i::before {
+  width: 30px;
+  left: 20%;
+}
+
+a i::after {
+  bottom: -7.5px;
+  left: 20%;
+  transform: translate(-50%);
+}
+
+a:hover i::after {
+  width: 30px;
+  left: 80%;
+}
+
+/* BUTTON END */
+
+
+/* Text-Animation */
+
+
+@keyframes animate {
+  0%{
+    background-position: 0%;
+  }
+  100%{
+    background-position: 400%;
+  }
+}
+/* Text-Animation-End */
+
+/* PRELOADER */
+
+#preloader{
+  background: url("file:///C:/Users/piyus/OneDrive/Documents/Downloads/Hero.899cad8d98aba1feee10.svg") no-repeat center;
+  top: 0; 
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;  
+  width: 100%;
+  position: absolute;
+  z-index: 100;  
+}
+
+/* PRELOADER END */
