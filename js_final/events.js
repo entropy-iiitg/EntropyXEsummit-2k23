@@ -120,3 +120,15 @@ buttons.forEach(function (button) {
         window.location.href = `events1.html?show=${targetDivId}`;
     });
 });
+
+
+var currentPage = window.location.href;
+
+
+var navLink= document.querySelectorAll('.nav-menu a');
+
+navLink.forEach(function(link) {
+    if (link.href === currentPage) {
+        link.classList.add('active');
+    }
+});

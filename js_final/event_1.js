@@ -1,16 +1,11 @@
-const hamburger= document.querySelector(".hamburger");
-const navMenu= document.querySelector(".nav-menu");
+
+var currentPage = window.location.href;
 
 
-hamburger.addEventListener("click",() =>
-{
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
-})
+var navLink= document.querySelectorAll('.nav-menu a');
 
-document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
-}))
-
-
+navLink.forEach(function(link) {
+    if (link.href === currentPage) {
+        link.classList.add('active');
+    }
+});
