@@ -9,10 +9,15 @@ var x = setInterval(function(){
     var minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
+    var formattedDays = (days< 10) ? "0" + days : days;
+    var formattedHours = (hours < 10) ? "0" + hours : hours;
+    var formattedMinutes = (minutes < 10) ? "0" + minutes : minutes;
+    var formattedSeconds = (seconds < 10) ? "0" + seconds : seconds;
+
     document.getElementById("days").innerHTML = days;
-    document.getElementById("hours").innerHTML = hours + "  :";
-    document.getElementById("minutes").innerHTML = minutes+"  :" ;
-    document.getElementById("seconds").innerHTML = seconds;
+    document.getElementById("hours").innerHTML = formattedHours + "  :";
+    document.getElementById("minutes").innerHTML = formattedMinutes + "  :";
+    document.getElementById("seconds").innerHTML = formattedSeconds;
     
 
     if(timeLeft<0)
