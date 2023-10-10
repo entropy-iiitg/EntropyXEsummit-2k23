@@ -43,8 +43,6 @@ menuButton.addEventListener("click", () => {
 
 
 var currentPage = window.location.href;
-
-
 var navLink= document.querySelectorAll('.nav-menu a');
 
 navLink.forEach(function(link) {
