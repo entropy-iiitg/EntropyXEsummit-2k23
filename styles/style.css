@@ -8,6 +8,7 @@
 
 body {
   text-align: center;
+  height: 100vh;
 }
 
 header
@@ -148,11 +149,9 @@ a
 .card
 {
   display: flex;
-  flex-basis: calc(30% - 20px); 
-  margin-bottom: 3%;
+  flex-basis: calc(30% - 20px);
   position: relative;
-  min-width: 300px;
-  height: 900px;
+  height: 35rem;
   margin-right: 1%;
   overflow: hidden;
   transition: 0.5s;
@@ -160,10 +159,10 @@ a
 
  .card .box {
     position: absolute;
-    top: 20px;
+    /* top: 20px;
     left: 20px;
     right: 20px;
-    bottom: 25px;
+    bottom: 25px; */
     border: 2px solid rgba(255, 255, 255, 0.2); 
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
@@ -203,13 +202,11 @@ a
 
 
 .card .box .content  img {
-    max-width: 100%;
-    max-height: 100%;
     margin-left: 2%;
     margin-top: 2.5%;
     margin-bottom: 2.5%;
-    width: 45%;
-    height: 90%;
+    width: 30%;
+    height: 85%;
     object-fit: cover;
     border-radius:5%;
  
@@ -711,4 +708,26 @@ footer .wave
       left: 0;
       z-index: 2; 
   }
+}
+
+.scroll_container{
+  height: 17rem;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.scroll_container::-webkit-scrollbar{
+  width: 0.5vw;
+}
+
+.scroll_container::-webkit-scrollbar-thumb{
+  background-color: #131a39;
+  background-color: aqua;
+  border-radius: 100vw;
+}
+
+.scroll_container::-webkit-scrollbar-track{
+  background: transparent;
+  border-radius: 100vw;
+  margin-block: .5em;
 }
