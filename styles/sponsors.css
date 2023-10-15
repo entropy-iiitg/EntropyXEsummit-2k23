@@ -430,12 +430,11 @@ a
 .nav-menu.active
 {
   display: flex;
-  /* position: fixed; */
     left: 0;
     z-index: 2; 
 }
 }
-@media (max-width:590px) {
+/* @media (max-width:590px) {
 footer
 {
   width: 150%;
@@ -449,12 +448,9 @@ footer
 .nav-menu{
   display: none;
     position: fixed;
-    /* position: absolute; */
     left: -100%;
     top: 100px;
-    /* top: 0; */
     gap: 0;
-    /* height: 100px; */
     flex-direction: column;
     background-color:#07031e;
     width: 100%;
@@ -471,13 +467,12 @@ footer
 .nav-menu.active
 {
   display: flex;
-  /* position: fixed; */
     left: 0;
     z-index: 2; 
-}
+} 
 
 
-}
+}*/
 @media (max-width:460px) {
   footer
 {
@@ -567,10 +562,16 @@ footer
 }
 
 .sponsors_heading{
-  font-size: 40px;
+  font-size: 80px;
 }
 
 @media only screen and (max-width: 600px) {
+  .sponsors_heading{
+    font-size: 60px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
   .sponsors_heading{
     font-size: 40px;
   }
