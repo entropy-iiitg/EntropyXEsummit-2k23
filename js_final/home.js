@@ -15,8 +15,8 @@ var x = setInterval(function(){
     var formattedSeconds = (seconds < 10) ? "0" + seconds : seconds;
 
     document.getElementById("days").innerHTML = days;
-    document.getElementById("hours").innerHTML = formattedHours + "  :";
-    document.getElementById("minutes").innerHTML = formattedMinutes + "  :";
+    document.getElementById("hours").innerHTML = formattedHours;
+    document.getElementById("minutes").innerHTML = formattedMinutes;
     document.getElementById("seconds").innerHTML = formattedSeconds;
     
 
