@@ -123,6 +123,9 @@ a
     transition: all 0.3s ease-in-out;
     background-color: white;
 } */
+.para-content{
+  margin: 0 12%;
+}
 
 @media(max-width:768px)
 {
@@ -195,7 +198,7 @@ a
 }
 
 .scroll_container {
-  max-height: 350px;
+  max-height: 400px;
   overflow-y: auto;
 }
 

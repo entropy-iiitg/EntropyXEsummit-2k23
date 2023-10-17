@@ -1,13 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../styles/style.css">
-  <link rel="stylesheet" href="../styles/ro.css">
-  <title>Events</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/ro.css">
+    <title>Events</title>
+    <style>
+        /* .scroll-container{
+        color: #fff;
+        height: 100%;
+        overflow: scroll;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        padding: 16px;
+        width: 49%;
+    } */
+        body {
+            font-family: Poppins, sans-serif;
+        }
+
+        .main-item {
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .subheading {
+            background-image: linear-gradient(to bottom right, #3232ff, #09b9ff);
+            border-radius: 4px;
+            font-size: 20px;
+            font-weight: 500;
+            padding: 4px 12px;
+        }
+
+        .para-content {
+            font-size: 16px;
+            font-weight: 300;
+        }
+
+        button{
+            cursor: pointer;
+        }
+
+        .common {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            justify-content: center;
+            margin: 50px 40px;
+
+        }
+
+        .ek-line-mai {
+            gap: 20px;
+            display: flex;
+        }
+
+        .prizes1 {
+            margin-top: 10%;
+            background-image: linear-gradient(to bottom right, #f0e, #ff0932);
+            border-radius: 4px;
+            font-size: 20px;
+            font-weight: 500;
+            padding: 4px 12px;
+        }
+
+        .team-fees {
+            margin-left: 20%;
+        }
+
+        .date-time-location {
+            margin-left: 15%;
+        }
+
+        .ye-bhi-hai-ek {
+            margin-top: 3%;
+            font-size: 16px;
+            font-weight: 300;
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <nav class="navbar">
@@ -34,921 +110,734 @@
     </header>
     <div class="container main">
         <img id="animated-background" src="../videos/backGround.svg" alt="">
-        <div class="container row main_div float-container event-div" id="div1" style="color: white;">
+
+        <div class="container row main_div float-container event-div" id="div111" style="color: white;">
             <div class="image_div container col-md-6 float-child" style="display: inline-block;">
                 <img class="image_event" src="../img/eventsPoster/robo.png" alt="">
             </div>
             <div class="container info_div col-md-6 float-child" style="display: inline-block;">
+                <h1 class="main-item">Tech Titans Throwdown<br>Robo Wrestling Championship</h1>
                 <div class="scroll_container">
-                    <h1>VALORANT2</h1>
-                    <div class="description">
+                    <div class="common">
                         <h2 class="subheading">DESCRIPTION</h2>
-                        <p class="para-content">During a logical questions treasure hunt, participants will be given a
-                            series of clues or challenges that require logical thinking and problem-solving skills. </p>
+                        <p class="para-content"> "Unleash your inner tech titan and witness the future of combat
+                            sports! Robo Wrestling: Where bolts and bytes collide in the ultimate showdown."
+                        </p>
                     </div>
-                    <div class="location-date">
-                        <div class="date">
-                            <h2 class="subheading">Date and Timing</h2>
-                            <p class="para-content">Nov 2023</p>
-                        </div>
-                        <div class="location">
-                            <h2 class="subheading">Location</h2>
-                            <p class="para-content">LG1</p>
-                        </div>
+                    <!-- <div class="ek-line-mai date-time-location" style="display: flex;"> -->
+                    <div class="common">
+                        <h2 class="subheading">DATE & TIMING</h2>
+                        <p>Round 1: 3rd Nov, 10:45AM-11:45AM</p>
+                        <p>Round 2: 4th Nov, 10:00AM-12:00PM</p>
                     </div>
-                    <div class="team-fees">
-                        <div class="team">
-                            <h2 class="subheading">TEAM</h2>
-                            <p class="para-content">Individual</p>
-                        </div>
-                        <div class="fees">
-                            <h2 class="subheading">FEES</h2>
-                            <p class="para-content">Free</p>
-                        </div>
+                    <div class="common">
+                        <h2 class="subheading">VENUE</h2>
+                        <p>LG-1 </p>
                     </div>
+
+                    <div class="common">
+                        <h2 class="subheading">TEAM</h2>
+                        <p>Individual</p>
+                    </div>
+                    <div class="common">
+                        <h2 class="subheading">FEES</h2>
+                        <p>Individual</p>ree</p>
+                    </div>
+
                     <div class="prizes">
-                        <h2 class="subheading">PRIZES</h2>
+                        <h2 class="prizes1">PRIZES</h2>
                         <ul>
-                            <li class="para-content">EXCITING PRIZES AND REWARDS</li>
+                            <li class="ye-bhi-hai-ek">EXCITING PRIZES AND REWARDS</li>
                         </ul>
                     </div>
                 </div>
                 <div class="register_button">
-                    <button class="register-button" class="register-button" style="--clr:white">
-                        <span class="register">REGISTER</span>
-                        <i></i>
-                    </button>
+                    <a href="#"><button
+                            class="register-button" class="register-button" style="--clr:white">
+                            <span class="register">REGISTER</span>
+                            <i></i>
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
 
-        <div class="container row main_div float-container event-div" id="div2" style="color: white;">
-            <div class="image_div container col-md-6 float-child" style="display: inline-block;">
-                <img class="image_event" src="../img/eventsPoster/coding.png" alt="">
-            </div>
-            <div class="container info_div col-md-6 float-child" style="display: inline-block;">
-                <div class="scroll_container">
-                    <h1>VALORANT2</h1>
-                    <div class="description">
-                        <h2 class="subheading">DESCRIPTION</h2>
-                        <p class="para-content">During a logical questions treasure hunt, participants will be given a
-                            series of clues or challenges that require logical thinking and problem-solving skills. </p>
-                    </div>
-                    <div class="location-date">
-                        <div class="date">
-                            <h2 class="subheading">Date and Timing</h2>
-                            <p class="para-content">Nov 2023</p>
-                        </div>
-                        <div class="location">
-                            <h2 class="subheading">Location</h2>
-                            <p class="para-content">LG1</p>
-                        </div>
-                    </div>
-                    <div class="team-fees">
-                        <div class="team">
-                            <h2 class="subheading">TEAM</h2>
-                            <p class="para-content">Individual</p>
-                        </div>
-                        <div class="fees">
-                            <h2 class="subheading">FEES</h2>
-                            <p class="para-content">Free</p>
-                        </div>
-                    </div>
-                    <div class="prizes">
-                        <h2 class="subheading">PRIZES</h2>
-                        <ul>
-                            <li class="para-content">EXCITING PRIZES AND REWARDS</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="register_button">
-                    <button class="register-button" class="register-button" style="--clr:white">
-                        <span class="register">REGISTER</span>
-                        <i></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="container row main_div float-container event-div" id="div3" style="color: white;">
-            <div class="image_div container col-md-6 float-child" style="display: inline-block;">
-                <img class="image_event" src="../img/eventsPoster/robo.png" alt="">
-            </div>
-            <div class="container info_div col-md-6 float-child" style="display: inline-block;">
-                <div class="scroll_container">
-                    <h1>VALORANT2</h1>
-                    <div class="description">
-                        <h2 class="subheading">DESCRIPTION</h2>
-                        <p class="para-content">During a logical questions treasure hunt, participants will be given a
-                            series of clues or challenges that require logical thinking and problem-solving skills. </p>
-                    </div>
-                    <div class="location-date">
-                        <div class="date">
-                            <h2 class="subheading">Date and Timing</h2>
-                            <p class="para-content">Nov 2023</p>
-                        </div>
-                        <div class="location">
-                            <h2 class="subheading">Location</h2>
-                            <p class="para-content">LG1</p>
-                        </div>
-                    </div>
-                    <div class="team-fees">
-                        <div class="team">
-                            <h2 class="subheading">TEAM</h2>
-                            <p class="para-content">Individual</p>
-                        </div>
-                        <div class="fees">
-                            <h2 class="subheading">FEES</h2>
-                            <p class="para-content">Free</p>
-                        </div>
-                    </div>
-                    <div class="prizes">
-                        <h2 class="subheading">PRIZES</h2>
-                        <ul>
-                            <li class="para-content">EXCITING PRIZES AND REWARDS</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="register_button">
-                    <button class="register-button" class="register-button" style="--clr:white">
-                        <span class="register">REGISTER</span>
-                        <i></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="container row main_div float-container event-div" id="div4" style="color: white;">
-            <div class="image_div container col-md-6 float-child" style="display: inline-block;">
-                <img class="image_event" src="coding.png" alt="">
-            </div>
-            <div class="container info_div col-md-6 float-child" style="display: inline-block;">
-                <div class="scroll_container">
-                    <h1>VALORANT2</h1>
-                    <div class="description">
-                        <h2 class="subheading">DESCRIPTION</h2>
-                        <p class="para-content">During a logical questions treasure hunt, participants will be given a
-                            series of clues or challenges that require logical thinking and problem-solving skills. </p>
-                    </div>
-                    <div class="location-date">
-                        <div class="date">
-                            <h2 class="subheading">Date and Timing</h2>
-                            <p class="para-content">Nov 2023</p>
-                        </div>
-                        <div class="location">
-                            <h2 class="subheading">Location</h2>
-                            <p class="para-content">LG1</p>
-                        </div>
-                    </div>
-                    <div class="team-fees">
-                        <div class="team">
-                            <h2 class="subheading">TEAM</h2>
-                            <p class="para-content">Individual</p>
-                        </div>
-                        <div class="fees">
-                            <h2 class="subheading">FEES</h2>
-                            <p class="para-content">Free</p>
-                        </div>
-                    </div>
-                    <div class="prizes">
-                        <h2 class="subheading">PRIZES</h2>
-                        <ul>
-                            <li class="para-content">EXCITING PRIZES AND REWARDS</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="register_button">
-                    <button class="register-button" class="register-button" style="--clr:white">
-                        <span class="register">REGISTER</span>
-                        <i></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="container row main_div float-container event-div" id="div5" style="color: white;">
-            <div class="image_div container col-md-6 float-child" style="display: inline-block;">
-                <img class="image_event" src="../img/eventsPoster/eSport.png" alt="">
-            </div>
-            <div class="container info_div col-md-6 float-child" style="display: inline-block;">
-                <div class="scroll_container">
-                    <h1>VALORANT2</h1>
-                    <div class="description">
-                        <h2 class="subheading">DESCRIPTION</h2>
-                        <p class="para-content">During a logical questions treasure hunt, participants will be given a
-                            series of clues or challenges that require logical thinking and problem-solving skills. </p>
-                    </div>
-                    <div class="location-date">
-                        <div class="date">
-                            <h2 class="subheading">Date and Timing</h2>
-                            <p class="para-content">Nov 2023</p>
-                        </div>
-                        <div class="location">
-                            <h2 class="subheading">Location</h2>
-                            <p class="para-content">LG1</p>
-                        </div>
-                    </div>
-                    <div class="team-fees">
-                        <div class="team">
-                            <h2 class="subheading">TEAM</h2>
-                            <p class="para-content">Individual</p>
-                        </div>
-                        <div class="fees">
-                            <h2 class="subheading">FEES</h2>
-                            <p class="para-content">Free</p>
-                        </div>
-                    </div>
-                    <div class="prizes">
-                        <h2 class="subheading">PRIZES</h2>
-                        <ul>
-                            <li class="para-content">EXCITING PRIZES AND REWARDS</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="register_button">
-                    <button class="register-button" class="register-button" style="--clr:white">
-                        <span class="register">REGISTER</span>
-                        <i></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="container row main_div float-container event-div" id="div6" style="color: white;">
-            <div class="image_div container col-md-6 float-child" style="display: inline-block;">
-                <img class="image_event" src="coding.png" alt="">
-            </div>
-            <div class="container info_div col-md-6 float-child" style="display: inline-block;">
-                <div class="scroll_container">
-                    <h1>VALORANT2</h1>
-                    <div class="description">
-                        <h2 class="subheading">DESCRIPTION</h2>
-                        <p class="para-content">During a logical questions treasure hunt, participants will be given a
-                            series of clues or challenges that require logical thinking and problem-solving skills. </p>
-                    </div>
-                    <div class="location-date">
-                        <div class="date">
-                            <h2 class="subheading">Date and Timing</h2>
-                            <p class="para-content">Nov 2023</p>
-                        </div>
-                        <div class="location">
-                            <h2 class="subheading">Location</h2>
-                            <p class="para-content">LG1</p>
-                        </div>
-                    </div>
-                    <div class="team-fees">
-                        <div class="team">
-                            <h2 class="subheading">TEAM</h2>
-                            <p class="para-content">Individual</p>
-                        </div>
-                        <div class="fees">
-                            <h2 class="subheading">FEES</h2>
-                            <p class="para-content">Free</p>
-                        </div>
-                    </div>
-                    <div class="prizes">
-                        <h2 class="subheading">PRIZES</h2>
-                        <ul>
-                            <li class="para-content">EXCITING PRIZES AND REWARDS</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="register_button">
-                    <button class="register-button" class="register-button" style="--clr:white">
-                        <span class="register">REGISTER</span>
-                        <i></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="container row main_div float-container event-div" id="div7" style="color: white;">
-            <div class="image_div container col-md-6 float-child" style="display: inline-block;">
-                <img class="image_event" src="../img/eventsPoster/hackathon.png" alt="">
-            </div>
-            <div class="container info_div col-md-6 float-child" style="display: inline-block;">
-                <div class="scroll_container">
-                    <h1>VALORANT2</h1>
-                    <div class="description">
-                        <h2 class="subheading">DESCRIPTION</h2>
-                        <p class="para-content">During a logical questions treasure hunt, participants will be given a
-                            series of clues or challenges that require logical thinking and problem-solving skills. </p>
-                    </div>
-                    <div class="location-date">
-                        <div class="date">
-                            <h2 class="subheading">Date and Timing</h2>
-                            <p class="para-content">Nov 2023</p>
-                        </div>
-                        <div class="location">
-                            <h2 class="subheading">Location</h2>
-                            <p class="para-content">LG1</p>
-                        </div>
-                    </div>
-                    <div class="team-fees">
-                        <div class="team">
-                            <h2 class="subheading">TEAM</h2>
-                            <p class="para-content">Individual</p>
-                        </div>
-                        <div class="fees">
-                            <h2 class="subheading">FEES</h2>
-                            <p class="para-content">Free</p>
-                        </div>
-                    </div>
-                    <div class="prizes">
-                        <h2 class="subheading">PRIZES</h2>
-                        <ul>
-                            <li class="para-content">EXCITING PRIZES AND REWARDS</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="register_button">
-                    <button class="register-button" class="register-button" style="--clr:white">
-                        <span class="register">REGISTER</span>
-                        <i></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="container row main_div float-container event-div" id="div8" style="color: white;">
-            <div class="image_div container col-md-6 float-child" style="display: inline-block;">
-                <img class="image_event" src="../img/eventsPoster/treasureHunt.png" alt="">
-            </div>
-            <div class="container info_div col-md-6 float-child" style="display: inline-block;">
-                <div class="scroll_container">
-                    <h1>VALORANT2</h1>
-                    <div class="description">
-                        <h2 class="subheading">DESCRIPTION</h2>
-                        <p class="para-content">During a logical questions treasure hunt, participants will be given a
-                            series of clues or challenges that require logical thinking and problem-solving skills. </p>
-                    </div>
-                    <div class="location-date">
-                        <div class="date">
-                            <h2 class="subheading">Date and Timing</h2>
-                            <p class="para-content">Nov 2023</p>
-                        </div>
-                        <div class="location">
-                            <h2 class="subheading">Location</h2>
-                            <p class="para-content">LG1</p>
-                        </div>
-                    </div>
-                    <div class="team-fees">
-                        <div class="team">
-                            <h2 class="subheading">TEAM</h2>
-                            <p class="para-content">Individual</p>
-                        </div>
-                        <div class="fees">
-                            <h2 class="subheading">FEES</h2>
-                            <p class="para-content">Free</p>
-                        </div>
-                    </div>
-                    <div class="prizes">
-                        <h2 class="subheading">PRIZES</h2>
-                        <ul>
-                            <li class="para-content">EXCITING PRIZES AND REWARDS</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="register_button">
-                    <button class="register-button" class="register-button" style="--clr:white">
-                        <span class="register">REGISTER</span>
-                        <i></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="container row main_div float-container event-div" id="div9" style="color: white;">
-            <div class="image_div container col-md-6 float-child" style="display: inline-block;">
-                <img class="image_event" src="../img/eventsPoster/pitichingComp.png" alt="">
-            </div>
-            <div class="container info_div col-md-6 float-child" style="display: inline-block;">
-                <div class="scroll_container">
-                    <h1>VALORANT2</h1>
-                    <div class="description">
-                        <h2 class="subheading">DESCRIPTION</h2>
-                        <p class="para-content">During a logical questions treasure hunt, participants will be given a
-                            series of clues or challenges that require logical thinking and problem-solving skills. </p>
-                    </div>
-                    <div class="location-date">
-                        <div class="date">
-                            <h2 class="subheading">Date and Timing</h2>
-                            <p class="para-content">Nov 2023</p>
-                        </div>
-                        <div class="location">
-                            <h2 class="subheading">Location</h2>
-                            <p class="para-content">LG1</p>
-                        </div>
-                    </div>
-                    <div class="team-fees">
-                        <div class="team">
-                            <h2 class="subheading">TEAM</h2>
-                            <p class="para-content">Individual</p>
-                        </div>
-                        <div class="fees">
-                            <h2 class="subheading">FEES</h2>
-                            <p class="para-content">Free</p>
-                        </div>
-                    </div>
-                    <div class="prizes">
-                        <h2 class="subheading">PRIZES</h2>
-                        <ul>
-                            <li class="para-content">EXCITING PRIZES AND REWARDS</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="register_button">
-                    <button class="register-button" class="register-button" style="--clr:white">
-                        <span class="register">REGISTER</span>
-                        <i></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="container row main_div float-container event-div" id="div10" style="color: white;">
-            <div class="image_div container col-md-6 float-child" style="display: inline-block;">
-                <img class="image_event" src="coding.png" alt="">
-            </div>
-            <div class="container info_div col-md-6 float-child" style="display: inline-block;">
-                <div class="scroll_container">
-                    <h1>VALORANT2</h1>
-                    <div class="description">
-                        <h2 class="subheading">DESCRIPTION</h2>
-                        <p class="para-content">During a logical questions treasure hunt, participants will be given a
-                            series of clues or challenges that require logical thinking and problem-solving skills. </p>
-                    </div>
-                    <div class="location-date">
-                        <div class="date">
-                            <h2 class="subheading">Date and Timing</h2>
-                            <p class="para-content">Nov 2023</p>
-                        </div>
-                        <div class="location">
-                            <h2 class="subheading">Location</h2>
-                            <p class="para-content">LG1</p>
-                        </div>
-                    </div>
-                    <div class="team-fees">
-                        <div class="team">
-                            <h2 class="subheading">TEAM</h2>
-                            <p class="para-content">Individual</p>
-                        </div>
-                        <div class="fees">
-                            <h2 class="subheading">FEES</h2>
-                            <p class="para-content">Free</p>
-                        </div>
-                    </div>
-                    <div class="prizes">
-                        <h2 class="subheading">PRIZES</h2>
-                        <ul>
-                            <li class="para-content">EXCITING PRIZES AND REWARDS</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="register_button">
-                    <button class="register-button" class="register-button" style="--clr:white">
-                        <span class="register">REGISTER</span>
-                        <i></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="container row main_div float-container event-div" id="div11" style="color: white;">
-            <div class="image_div container col-md-6 float-child" style="display: inline-block;">
-                <img class="image_event" src="coding.png" alt="">
-            </div>
-            <div class="container info_div col-md-6 float-child" style="display: inline-block;">
-                <div class="scroll_container">
-                    <h1>VALORANT2</h1>
-                    <div class="description">
-                        <h2 class="subheading">DESCRIPTION</h2>
-                        <p class="para-content">During a logical questions treasure hunt, participants will be given a
-                            series of clues or challenges that require logical thinking and problem-solving skills. </p>
-                    </div>
-                    <div class="location-date">
-                        <div class="date">
-                            <h2 class="subheading">Date and Timing</h2>
-                            <p class="para-content">Nov 2023</p>
-                        </div>
-                        <div class="location">
-                            <h2 class="subheading">Location</h2>
-                            <p class="para-content">LG1</p>
-                        </div>
-                    </div>
-                    <div class="team-fees">
-                        <div class="team">
-                            <h2 class="subheading">TEAM</h2>
-                            <p class="para-content">Individual</p>
-                        </div>
-                        <div class="fees">
-                            <h2 class="subheading">FEES</h2>
-                            <p class="para-content">Free</p>
-                        </div>
-                    </div>
-                    <div class="prizes">
-                        <h2 class="subheading">PRIZES</h2>
-                        <ul>
-                            <li class="para-content">EXCITING PRIZES AND REWARDS</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="register_button">
-                    <button class="register-button" class="register-button" style="--clr:white">
-                        <span class="register">REGISTER</span>
-                        <i></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="container row main_div float-container event-div" id="div12" style="color: white;">
-            <div class="image_div container col-md-6 float-child" style="display: inline-block;">
-                <img class="image_event" src="coding.png" alt="">
-            </div>
-            <div class="container info_div col-md-6 float-child" style="display: inline-block;">
-                <div class="scroll_container">
-                    <h1>VALORANT2</h1>
-                    <div class="description">
-                        <h2 class="subheading">DESCRIPTION</h2>
-                        <p class="para-content">During a logical questions treasure hunt, participants will be given a
-                            series of clues or challenges that require logical thinking and problem-solving skills. </p>
-                    </div>
-                    <div class="location-date">
-                        <div class="date">
-                            <h2 class="subheading">Date and Timing</h2>
-                            <p class="para-content">Nov 2023</p>
-                        </div>
-                        <div class="location">
-                            <h2 class="subheading">Location</h2>
-                            <p class="para-content">LG1</p>
-                        </div>
-                    </div>
-                    <div class="team-fees">
-                        <div class="team">
-                            <h2 class="subheading">TEAM</h2>
-                            <p class="para-content">Individual</p>
-                        </div>
-                        <div class="fees">
-                            <h2 class="subheading">FEES</h2>
-                            <p class="para-content">Free</p>
-                        </div>
-                    </div>
-                    <div class="prizes">
-                        <h2 class="subheading">PRIZES</h2>
-                        <ul>
-                            <li class="para-content">EXCITING PRIZES AND REWARDS</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="register_button">
-                    <button class="register-button" class="register-button" style="--clr:white">
-                        <span class="register">REGISTER</span>
-                        <i></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="container row main_div float-container event-div" id="div13" style="color: white;">
-            <div class="image_div container col-md-6 float-child" style="display: inline-block;">
-                <img class="image_event" src="../img/eventsPoster/revShark.png" alt="">
-            </div>
-            <div class="container info_div col-md-6 float-child" style="display: inline-block;">
-                <div class="scroll_container">
-                    <h1>VALORANT2</h1>
-                    <div class="description">
-                        <h2 class="subheading">DESCRIPTION</h2>
-                        <p class="para-content">During a logical questions treasure hunt, participants will be given a
-                            series of clues or challenges that require logical thinking and problem-solving skills. </p>
-                    </div>
-                    <div class="location-date">
-                        <div class="date">
-                            <h2 class="subheading">Date and Timing</h2>
-                            <p class="para-content">Nov 2023</p>
-                        </div>
-                        <div class="location">
-                            <h2 class="subheading">Location</h2>
-                            <p class="para-content">LG1</p>
-                        </div>
-                    </div>
-                    <div class="team-fees">
-                        <div class="team">
-                            <h2 class="subheading">TEAM</h2>
-                            <p class="para-content">Individual</p>
-                        </div>
-                        <div class="fees">
-                            <h2 class="subheading">FEES</h2>
-                            <p class="para-content">Free</p>
-                        </div>
-                    </div>
-                    <div class="prizes">
-                        <h2 class="subheading">PRIZES</h2>
-                        <ul>
-                            <li class="para-content">EXCITING PRIZES AND REWARDS</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="register_button">
-                    <button class="register-button" class="register-button" style="--clr:white">
-                        <span class="register">REGISTER</span>
-                        <i></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="container row main_div float-container event-div" id="div14" style="color: white;">
-            <div class="image_div container col-md-6 float-child" style="display: inline-block;">
-                <img class="image_event" src="../img/eventsPoster/RnD.png" alt="">
-            </div>
-            <div class="container info_div col-md-6 float-child" style="display: inline-block;">
-                <div class="scroll_container">
-                    <h1>VALORANT2</h1>
-                    <div class="description">
-                        <h2 class="subheading">DESCRIPTION</h2>
-                        <p class="para-content">During a logical questions treasure hunt, participants will be given a
-                            series of clues or challenges that require logical thinking and problem-solving skills. </p>
-                    </div>
-                    <div class="location-date">
-                        <div class="date">
-                            <h2 class="subheading">Date and Timing</h2>
-                            <p class="para-content">Nov 2023</p>
-                        </div>
-                        <div class="location">
-                            <h2 class="subheading">Location</h2>
-                            <p class="para-content">LG1</p>
-                        </div>
-                    </div>
-                    <div class="team-fees">
-                        <div class="team">
-                            <h2 class="subheading">TEAM</h2>
-                            <p class="para-content">Individual</p>
-                        </div>
-                        <div class="fees">
-                            <h2 class="subheading">FEES</h2>
-                            <p class="para-content">Free</p>
-                        </div>
-                    </div>
-                    <div class="prizes">
-                        <h2 class="subheading">PRIZES</h2>
-                        <ul>
-                            <li class="para-content">EXCITING PRIZES AND REWARDS</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="register_button">
-                    <button class="register-button" class="register-button" style="--clr:white">
-                        <span class="register">REGISTER</span>
-                        <i></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="container row main_div float-container event-div" id="div15" style="color: white;">
-            <div class="image_div container col-md-6 float-child" style="display: inline-block;">
-                <img class="image_event" src="../img/eventsPoster/techQuiz.png" alt="">
-            </div>
-            <div class="container info_div col-md-6 float-child" style="display: inline-block;">
-                <div class="scroll_container">
-                    <h1>VALORANT2</h1>
-                    <div class="description">
-                        <h2 class="subheading">DESCRIPTION</h2>
-                        <p class="para-content">During a logical questions treasure hunt, participants will be given a
-                            series of clues or challenges that require logical thinking and problem-solving skills. </p>
-                    </div>
-                    <div class="location-date">
-                        <div class="date">
-                            <h2 class="subheading">Date and Timing</h2>
-                            <p class="para-content">Nov 2023</p>
-                        </div>
-                        <div class="location">
-                            <h2 class="subheading">Location</h2>
-                            <p class="para-content">LG1</p>
-                        </div>
-                    </div>
-                    <div class="team-fees">
-                        <div class="team">
-                            <h2 class="subheading">TEAM</h2>
-                            <p class="para-content">Individual</p>
-                        </div>
-                        <div class="fees">
-                            <h2 class="subheading">FEES</h2>
-                            <p class="para-content">Free</p>
-                        </div>
-                    </div>
-                    <div class="prizes">
-                        <h2 class="subheading">PRIZES</h2>
-                        <ul>
-                            <li class="para-content">EXCITING PRIZES AND REWARDS</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="register_button">
-                    <button class="register-button" class="register-button" style="--clr:white">
-                        <span class="register">REGISTER</span>
-                        <i></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="container row main_div float-container event-div" id="div16" style="color: white;">
+        <div class="container row main_div float-container event-div" id="div112" style="color: white;">
             <div class="image_div container col-md-6 float-child" style="display: inline-block;">
                 <img class="image_event" src="../img/eventsPoster/iplAuc.png" alt="">
             </div>
             <div class="container info_div col-md-6 float-child" style="display: inline-block;">
+                <h1 class="main-item">IPL Auction</h1>
                 <div class="scroll_container">
-                    <h1>VALORANT2</h1>
-                    <div class="description">
+                    <div class="common">
                         <h2 class="subheading">DESCRIPTION</h2>
-                        <p class="para-content">During a logical questions treasure hunt, participants will be given a
-                            series of clues or challenges that require logical thinking and problem-solving skills. </p>
+                        <p class="para-content"> "Unleash the Cricket Craze: Experience the Thrills of the IPL Auction at IIIT Guwahati! Get ready for a high-stakes battle as the brightest talents collide, and teams compete to secure their dream players. Witness the intense bidding wars, the electrifying atmosphere, and the promise of future cricketing legends. Join us for an unforgettable evening of cricketing passion, star-studded lineups, and the ultimate test of strategy. Don't miss out on the IPL Auction  - where dreams are bought and champions are made!"
+
+                        </p>
                     </div>
-                    <div class="location-date">
-                        <div class="date">
-                            <h2 class="subheading">Date and Timing</h2>
-                            <p class="para-content">Nov 2023</p>
-                        </div>
-                        <div class="location">
-                            <h2 class="subheading">Location</h2>
-                            <p class="para-content">LG1</p>
-                        </div>
+                    <!-- <div class="ek-line-mai date-time-location" style="display: flex;"> -->
+                    <div class="common">
+                        <h2 class="subheading">DATE & TIMING</h2>
+                        <p>Round 1: 3rd Nov, 12:00PM-01:00PM</p>
+                        <p>Round 2: 4th Nov, 03:30PM-06:00PM</p>
                     </div>
-                    <div class="team-fees">
-                        <div class="team">
-                            <h2 class="subheading">TEAM</h2>
-                            <p class="para-content">Individual</p>
-                        </div>
-                        <div class="fees">
-                            <h2 class="subheading">FEES</h2>
-                            <p class="para-content">Free</p>
-                        </div>
+                    <div class="common">
+                        <h2 class="subheading">VENUE</h2>
+                        <p>LG-1</p>
                     </div>
+
+                    <div class="common">
+                        <h2 class="subheading">TEAM</h2>
+                        <p>Group</p>
+                    </div>
+                    <div class="common">
+                        <h2 class="subheading">FEES</h2>
+                        <p>Free</p>
+                    </div>
+
                     <div class="prizes">
-                        <h2 class="subheading">PRIZES</h2>
+                        <h2 class="prizes1">PRIZES</h2>
                         <ul>
-                            <li class="para-content">EXCITING PRIZES AND REWARDS</li>
+                            <li class="ye-bhi-hai-ek">EXCITING PRIZES AND REWARDS</li>
                         </ul>
                     </div>
                 </div>
                 <div class="register_button">
-                    <button class="register-button" class="register-button" style="--clr:white">
-                        <span class="register">REGISTER</span>
-                        <i></i>
-                    </button>
+                    <a href="#"><button
+                            class="register-button" class="register-button" style="--clr:white">
+                            <span class="register">REGISTER</span>
+                            <i></i>
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
 
-        <div class="container row main_div float-container event-div" id="div17" style="color: white;">
+
+        <div class="container row main_div float-container event-div" id="div113" style="color: white;">
             <div class="image_div container col-md-6 float-child" style="display: inline-block;">
-                <img class="image_event" src="coding.png" alt="">
+                <img class="image_event" src="../img/eventsPoster/robo.png" alt="">
             </div>
             <div class="container info_div col-md-6 float-child" style="display: inline-block;">
+                <h1 class="main-item">Maze-X-plorium<br>Navigating Robo Frontiers</h1>
                 <div class="scroll_container">
-                    <h1>VALORANT2</h1>
-                    <div class="description">
+                    <div class="common">
                         <h2 class="subheading">DESCRIPTION</h2>
-                        <p class="para-content">During a logical questions treasure hunt, participants will be given a
-                            series of clues or challenges that require logical thinking and problem-solving skills. </p>
+                        <p class="para-content"> "Navigate a labyrinth of mystery and excitement! Step into the world of
+                            mazes, where every corner holds a secret."
+                            </p>
                     </div>
-                    <div class="location-date">
-                        <div class="date">
-                            <h2 class="subheading">Date and Timing</h2>
-                            <p class="para-content">Nov 2023</p>
-                        </div>
-                        <div class="location">
-                            <h2 class="subheading">Location</h2>
-                            <p class="para-content">LG1</p>
-                        </div>
+                    <!-- <div class="ek-line-mai date-time-location" style="display: flex;"> -->
+                    <div class="common">
+                        <h2 class="subheading">DATE & TIMING</h2>
+                        <p>Round 1: 4th Nov, 02:30PM-05:30PM</p>
+                        <p>Round 2: 5th Nov, 02:00PM-05:00PM</p>
                     </div>
-                    <div class="team-fees">
-                        <div class="team">
-                            <h2 class="subheading">TEAM</h2>
-                            <p class="para-content">Individual</p>
-                        </div>
-                        <div class="fees">
-                            <h2 class="subheading">FEES</h2>
-                            <p class="para-content">Free</p>
-                        </div>
+                    <div class="common">
+                        <h2 class="subheading">VENUE</h2>
+                        <p>LG-1</p>
                     </div>
+
+                    <div class="common">
+                        <h2 class="subheading">TEAM</h2>
+                        <p>Individual</p>
+                    </div>
+                    <div class="common">
+                        <h2 class="subheading">FEES</h2>
+                        <p>Free</p>
+                    </div>
+
                     <div class="prizes">
-                        <h2 class="subheading">PRIZES</h2>
+                        <h2 class="prizes1">PRIZES</h2>
                         <ul>
-                            <li class="para-content">EXCITING PRIZES AND REWARDS</li>
+                            <li class="ye-bhi-hai-ek">EXCITING PRIZES AND REWARDS</li>
                         </ul>
                     </div>
                 </div>
                 <div class="register_button">
-                    <button class="register-button" class="register-button" style="--clr:white">
-                        <span class="register">REGISTER</span>
-                        <i></i>
-                    </button>
+                    <a href=""><a href="#"><button
+                            class="register-button" class="register-button" style="--clr:white">
+                            <span class="register">REGISTER</span>
+                            <i></i>
+                        </button>
+                    </a>
+                </a>
                 </div>
             </div>
         </div>
 
-        <div class="container row main_div float-container event-div" id="div18" style="color: white;">
+        <div class="container row main_div float-container event-div" id="div114" style="color: white;">
             <div class="image_div container col-md-6 float-child" style="display: inline-block;">
-                <img class="image_event" src="coding.png" alt="">
+                <img class="image_event" src="../img/eventsPoster/revShark.png" alt="">
             </div>
             <div class="container info_div col-md-6 float-child" style="display: inline-block;">
+                <h1 class="main-item">Reverse Shark Tank</h1>
                 <div class="scroll_container">
-                    <h1>VALORANT2</h1>
-                    <div class="description">
+                    <div class="common">
                         <h2 class="subheading">DESCRIPTION</h2>
-                        <p class="para-content">During a logical questions treasure hunt, participants will be given a
-                            series of clues or challenges that require logical thinking and problem-solving skills. </p>
+                        <p class="para-content"> This is your chance to step into the shoes of a venture capitalist and invest in real startups. Form teams and show off how the best of investors do it.The team with the most profitable portfolio wins! Teams can have up to 5 participants.<br>Hurry and register your team now for this investing simulation event! Who will prove to be the shrewdest shark amongst you all?
+                            </p>
                     </div>
-                    <div class="location-date">
-                        <div class="date">
-                            <h2 class="subheading">Date and Timing</h2>
-                            <p class="para-content">Nov 2023</p>
-                        </div>
-                        <div class="location">
-                            <h2 class="subheading">Location</h2>
-                            <p class="para-content">LG1</p>
-                        </div>
+                    <!-- <div class="ek-line-mai date-time-location" style="display: flex;"> -->
+                    <div class="common">
+                        <h2 class="subheading">DATE & TIMING</h2>
+                        <p>Round 1-2: 3rd Nov, 02:00PM-05:00PM</p>
                     </div>
-                    <div class="team-fees">
-                        <div class="team">
-                            <h2 class="subheading">TEAM</h2>
-                            <p class="para-content">Individual</p>
-                        </div>
-                        <div class="fees">
-                            <h2 class="subheading">FEES</h2>
-                            <p class="para-content">Free</p>
-                        </div>
+                    <div class="common">
+                        <h2 class="subheading">VENUE</h2>
+                        <p>LG-1</p>
                     </div>
+
+                    <div class="common">
+                        <h2 class="subheading">TEAM</h2>
+                        <p>Individual</p>
+                    </div>
+                    <div class="common">
+                        <h2 class="subheading">FEES</h2>
+                        <p>Free</p>
+                    </div>
+
                     <div class="prizes">
-                        <h2 class="subheading">PRIZES</h2>
+                        <h2 class="prizes1">PRIZES</h2>
                         <ul>
-                            <li class="para-content">EXCITING PRIZES AND REWARDS</li>
+                            <li class="ye-bhi-hai-ek">EXCITING PRIZES AND REWARDS</li>
                         </ul>
                     </div>
                 </div>
                 <div class="register_button">
-                    <button class="register-button" class="register-button" style="--clr:white">
-                        <span class="register">REGISTER</span>
-                        <i></i>
-                    </button>
+                    <a href="#"><button
+                            class="register-button" class="register-button" style="--clr:white">
+                            <span class="register">REGISTER</span>
+                            <i></i>
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
 
-        <div class="container row main_div float-container event-div" id="div19" style="color: white;">
-          <div class="image_div container col-md-6 float-child" style="display: inline-block;">
-              <img class="image_event" src="../img/eventsPoster/devil.png" alt="">
-          </div>
-          <div class="container info_div col-md-6 float-child" style="display: inline-block;">
-              <div class="scroll_container">
-                  <h1>VALORANT2</h1>
-                  <div class="description">
-                      <h2 class="subheading">DESCRIPTION</h2>
-                      <p class="para-content">During a logical questions treasure hunt, participants will be given a
-                          series of clues or challenges that require logical thinking and problem-solving skills. </p>
-                  </div>
-                  <div class="location-date">
-                      <div class="date">
-                          <h2 class="subheading">Date and Timing</h2>
-                          <p class="para-content">Nov 2023</p>
-                      </div>
-                      <div class="location">
-                          <h2 class="subheading">Location</h2>
-                          <p class="para-content">LG1</p>
-                      </div>
-                  </div>
-                  <div class="team-fees">
-                      <div class="team">
-                          <h2 class="subheading">TEAM</h2>
-                          <p class="para-content">Individual</p>
-                      </div>
-                      <div class="fees">
-                          <h2 class="subheading">FEES</h2>
-                          <p class="para-content">Free</p>
-                      </div>
-                  </div>
-                  <div class="prizes">
-                      <h2 class="subheading">PRIZES</h2>
-                      <ul>
-                          <li class="para-content">EXCITING PRIZES AND REWARDS</li>
-                      </ul>
-                  </div>
-              </div>
-              <div class="register_button">
-                  <button class="register-button" class="register-button" style="--clr:white">
-                      <span class="register">REGISTER</span>
-                      <i></i>
-                  </button>
-              </div>
-          </div>
-      </div>
+        <div class="container row main_div float-container event-div" id="div115" style="color: white;">
+            <div class="image_div container col-md-6 float-child" style="display: inline-block;">
+                <img class="image_event" src="../img/eventsPoster/.png" alt="speaker">
+            </div>
+            <div class="container info_div col-md-6 float-child" style="display: inline-block;">
+                <h1 class="main-item">Speaker Session</h1>
+                <div class="scroll_container">
+                    <div class="common">
+                        <h2 class="subheading">DESCRIPTION</h2>
+                        <p class="para-content"> Join us for a dynamic symphony of perspectives, as sports icons, visionary entrepreneurs, astute bureaucrats, and beloved sports personalities converge on a single stage.Witness these exceptional individuals share their remarkable journeys, insights, and strategies for success. Our speaker sessions and panel discussions promise to be a powerful collision of passion, resilience, and vision, where champions from various walks of life come together to reveal the secrets to conquering challenges and achieving greatness.
+                            </p>
+                    </div>
+                    <!-- <div class="ek-line-mai date-time-location" style="display: flex;"> -->
+                    <div class="common">
+                        <h2 class="subheading">DATE & TIMING</h2>
+                        <p>3rd Nov, 04:00PM-05:00PM</p>
+                    </div>
+                    <div class="common">
+                        <h2 class="subheading">VENUE</h2>
+                        <p>LG-1</p>
+                    </div>
+
+                    <div class="common">
+                        <h2 class="subheading">TEAM</h2>
+                        <p>Individual</p>
+                    </div>
+                    <div class="common">
+                        <h2 class="subheading">FEES</h2>
+                        <p>Free</p>
+                    </div>
+
+                    <div class="prizes">
+                        <h2 class="prizes1">PRIZES</h2>
+                        <ul>
+                            <li class="ye-bhi-hai-ek">EXCITING PRIZES AND REWARDS</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="register_button">
+                    <a href="#"><button
+                            class="register-button" class="register-button" style="--clr:white">
+                            <span class="register">REGISTER</span>
+                            <i></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container row main_div float-container event-div" id="div211" style="color: white;">
+            <div class="image_div container col-md-6 float-child" style="display: inline-block;">
+                <img class="image_event" src="../img/eventsPoster/treasureHunt.png" alt="">
+            </div>
+            <div class="container info_div col-md-6 float-child" style="display: inline-block;">
+                <h1 class="main-item">Treasure Hunt</h1>
+                <div class="scroll_container">
+                    <div class="common">
+                        <h2 class="subheading">DESCRIPTION</h2>
+                        <p class="para-content"> In the realm of tech, an adventure we'll flaunt,
+                            Join our Techsure Hunt, where secrets you'll confront.
+                            With clues and gadgets, your skills will prevail,
+                            At the treasure trove, where tech's tales unveil!
+                            </p>
+                    </div>
+                    <!-- <div class="ek-line-mai date-time-location" style="display: flex;"> -->
+                    <div class="common">
+                        <h2 class="subheading">DATE & TIMING</h2>
+                        <p>Round 1: 4th Nov; 10:00AM-1:00PM;
+                        </p>
+                        <p>Round 2: 4th Nov, 02:00PM-03:00PM</p>
+                    </div>
+                    <div class="common">
+                        <h2 class="subheading">VENUE</h2>
+                        <p>LG-1/LG-2</p>
+                    </div>
+
+                    <div class="common">
+                        <h2 class="subheading">TEAM</h2>
+                        <p>Individual</p>
+                    </div>
+                    <div class="common">
+                        <h2 class="subheading">FEES</h2>
+                        <p>Free</p>
+                    </div>
+
+                    <div class="prizes">
+                        <h2 class="prizes1">PRIZES</h2>
+                        <ul>
+                            <li class="ye-bhi-hai-ek">EXCITING PRIZES AND REWARDS</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="register_button">
+                    <a href="#"><button
+                            class="register-button" class="register-button" style="--clr:white">
+                            <span class="register">REGISTER</span>
+                            <i></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container row main_div float-container event-div" id="div212" style="color: white;">
+            <div class="image_div container col-md-6 float-child" style="display: inline-block;">
+                <img class="image_event" src="../img/eventsPoster/coding.png" alt="">
+            </div>
+            <div class="container info_div col-md-6 float-child" style="display: inline-block;">
+                <h1 class="main-item">CodeThrill 6.0</h1>
+                <div class="scroll_container">
+                    <div class="common">
+                        <h2 class="subheading">DESCRIPTION</h2>
+                        <p class="para-content">From binary to algorithms, we navigate the code,
+                            Unravelling mysteries, where creativity's bestowed.
+                            As bits and bytes converge, and algorithms take their place,
+                            Codethrill 6.0 unveils a captivating coding chase.
+                            <br>
+                            Join us on Nov’4th and set the keyboard keys ablaze!
+                            </p>
+                        </div>
+                    
+                        <div class="common">
+                            <h2 class="subheading">Date and Timing</h2>
+                            <p>4th November, 4PM </p>
+                        </div>
+                        <div class="common">
+                            <h2 class="subheading">Location</h2>
+                            <p>LAB 3 & 5 and Online</p>
+                        </div>
+                    
+                    
+                        <div class="common">
+                            <h2 class="subheading">Team</h2>
+                            <p>Individual</p>
+                        </div>
+                        <div class="common">
+                            <h2 class="subheading">Fees</h2>
+                            <p>Free</p>
+                        </div>
+                    
+                    <div class="prizes">
+                        <h2 class="prizes1">PRIZES</h2>
+                        <ul>
+                            <li class="ye-bhi-hai-ek">EXCITING PRIZES AND REWARDS</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="register_button">
+                    <a href="https://practice.geeksforgeeks.org/contest/code-thrill-60-by-iiit-guwahati"><button
+                            class="register-button" class="register-button" style="--clr:white">
+                            <span class="register">REGISTER</span>
+                            <i></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container row main_div float-container event-div" id="div213" style="color: white;">
+            <div class="image_div container col-md-6 float-child" style="display: inline-block;">
+                <img class="image_event" src="coding.png" alt="speaker">
+            </div>
+            <div class="container info_div col-md-6 float-child" style="display: inline-block;">
+                <h1 class="main-item">Speaker Session</h1>
+                <div class="scroll_container">
+                    <div class="common">
+                        <h2 class="subheading">DESCRIPTION</h2>
+                        <p class="para-content"> Join us for a dynamic symphony of perspectives, as sports icons, visionary entrepreneurs, astute bureaucrats, and beloved sports personalities converge on a single stage.Witness these exceptional individuals share their remarkable journeys, insights, and strategies for success. Our speaker sessions and panel discussions promise to be a powerful collision of passion, resilience, and vision, where champions from various walks of life come together to reveal the secrets to conquering challenges and achieving greatness.
+                            </p>
+                    </div>
+                    <!-- <div class="ek-line-mai date-time-location" style="display: flex;"> -->
+                    <div class="common">
+                        <h2 class="subheading">DATE & TIMING</h2>
+                        <p>4th Nov, 04:00PM-05:00PM</p>
+                    </div>
+                    <div class="common">
+                        <h2 class="subheading">VENUE</h2>
+                        <p>LG-1</p>
+                    </div>
+
+                    <div class="common">
+                        <h2 class="subheading">TEAM</h2>
+                        <p>Individual</p>
+                    </div>
+                    <div class="common">
+                        <h2 class="subheading">FEES</h2>
+                        <p>Free</p>
+                    </div>
+
+                    <div class="prizes">
+                        <h2 class="prizes1">PRIZES</h2>
+                        <ul>
+                            <li class="ye-bhi-hai-ek">EXCITING PRIZES AND REWARDS</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="register_button">
+                    <a href="#"><button
+                            class="register-button" class="register-button" style="--clr:white">
+                            <span class="register">REGISTER</span>
+                            <i></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container row main_div float-container event-div" id="div311" style="color: white;">
+            <div class="image_div container col-md-6 float-child" style="display: inline-block;">
+                <img class="image_event" src="../img/eventsPoster/devil.png" alt="">
+            </div>
+            <div class="container info_div col-md-6 float-child" style="display: inline-block;">
+                <h1 class="main-item">Tech-Tonic Tussle</h1>
+                <div class="scroll_container">
+                    <div class="common">
+                        <h2 class="subheading">DESCRIPTION</h2>
+                        <p class="para-content">Challenge, Learn, and Innovate: The Tech-Tonic Tussle Beckons!
+                            Let’s put our skills to test in our exciting verbal debate competition, an
+                            opportunity to learn, grow and expand our horizons of critical thinking. Join us as
+                            we unravel possible solutions to some of the most burning issues in the Business
+                            World of the digital era. Join the Debate, Shape the Future: Tech-Tonic Tussle
+                            Awaits Your Voice!
+                            
+                            </p>
+                    </div>
+                    <!-- <div class="ek-line-mai date-time-location" style="display: flex;"> -->
+                    <div class="common">
+                        <h2 class="subheading">DATE & TIMING</h2>
+                        <p>5th Nov, 10:30AM-01:00PM</p>
+                        
+                    </div>
+                    <div class="common">
+                        <h2 class="subheading">VENUE</h2>
+                        <p>IIIT-G Campus</p>
+                    </div>
+
+                    <div class="common">
+                        <h2 class="subheading">TEAM</h2>
+                        <p>Group</p>
+                    </div>
+                    <div class="common">
+                        <h2 class="subheading">FEES</h2>
+                        <p>Free</p>
+                    </div>
+
+                    <div class="prizes">
+                        <h2 class="prizes1">PRIZES</h2>
+                        <ul>
+                            <li class="ye-bhi-hai-ek">EXCITING PRIZES AND REWARDS</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="register_button">
+                    <a href="#"><button
+                            class="register-button" class="register-button" style="--clr:white">
+                            <span class="register">REGISTER</span>
+                            <i></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container row main_div float-container event-div" id="div312" style="color: white;">
+            <div class="image_div container col-md-6 float-child" style="display: inline-block;">
+                <img class="image_event" src="../img/eventsPoster/RnD.png" alt="">
+            </div>
+            <div class="container info_div col-md-6 float-child" style="display: inline-block;">
+                <h1 class="main-item">Research Colloquium</h1>
+                <div class="scroll_container">
+                    <div class="common">
+                        <h2 class="subheading">DESCRIPTION</h2>
+                        <p class="para-content"> "Prepare to embark on a captivating journey through the intricate balance of chaos and order at our forthcoming Research Colloquium! This intellectual extravaganza serves as your key to unveiling the enigmatic secrets of our universe, as we bring together brilliant minds to decipher the mysteries of various scientific realms. Mark your calendar for November 5th, 2023, and be part of a thrilling expedition to unravel the universe's hidden patterns.
+                            Don't miss this opportunity to explore the mysteries of the cosmos with us!"
+
+                            </p>
+                    </div>
+                    <!-- <div class="ek-line-mai date-time-location" style="display: flex;"> -->
+                    <div class="common">
+                        <h2 class="subheading">DATE & TIMING</h2>
+                        <p>5th Nov, 10:45 AM - 11:45 AM </p>
+                    </div>
+                    <div class="common">
+                        <h2 class="subheading">VENUE</h2>
+                        <p>IIITG Front Ground</p>
+                    </div>
+
+                    <div class="common">
+                        <h2 class="subheading">TEAM</h2>
+                        <p>Individual</p>
+                    </div>
+                    <div class="common">
+                        <h2 class="subheading">FEES</h2>
+                        <p>Free</p>
+                    </div>
+
+                    <div class="prizes">
+                        <h2 class="prizes1">PRIZES</h2>
+                        <ul>
+                            <li class="ye-bhi-hai-ek">EXCITING PRIZES AND REWARDS</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="register_button">
+                    <a href="#"><button
+                            class="register-button" class="register-button" style="--clr:white">
+                            <span class="register">REGISTER</span>
+                            <i></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container row main_div float-container event-div" id="div313" style="color: white;">
+            <div class="image_div container col-md-6 float-child" style="display: inline-block;">
+                <img class="image_event" src="../img/eventsPoster/techQuiz.png" alt="">
+            </div>
+            <div class="container info_div col-md-6 float-child" style="display: inline-block;">
+                <h1 class="main-item">Techno Challenge</h1>
+                <div class="scroll_container">
+                    <div class="common">
+                        <h2 class="subheading">DESCRIPTION</h2>
+                        <p class="para-content"> In the world of wires and code's embrace, <br>
+                            Join our Tech Quiz, win the tech race. <br>
+                            Bytes and circuits, minds ablaze,<br>
+                            At IIITG's fest, where brilliance stays!
+                            
+                            </p>
+                    </div>
+                    <!-- <div class="ek-line-mai date-time-location" style="display: flex;"> -->
+                    <div class="common">
+                        <h2 class="subheading">DATE & TIMING</h2>
+                        <p>Round 1: 5th Nov, 12:00PM-1:00PM</p>
+                        <p>Round 2: 5th Nov, 2:00PM-4:00PM</p>
+                    </div>
+                    <div class="common">
+                        <h2 class="subheading">VENUE</h2>
+                        <p>LG 1 & 2 (Round 1), LG 2 (Round 2)</p>
+                    </div>
+
+                    <div class="common">
+                        <h2 class="subheading">TEAM</h2>
+                        <p>Group</p>
+                    </div>
+                    <div class="common">
+                        <h2 class="subheading">FEES</h2>
+                        <p>Free</p>
+                    </div>
+
+                    <div class="prizes">
+                        <h2 class="prizes1">PRIZES</h2>
+                        <ul>
+                            <li class="ye-bhi-hai-ek">EXCITING PRIZES AND REWARDS</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="register_button">
+                    <a href="#"><button
+                            class="register-button" class="register-button" style="--clr:white">
+                            <span class="register">REGISTER</span>
+                            <i></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container row main_div float-container event-div" id="div314" style="color: white;">
+            <div class="image_div container col-md-6 float-child" style="display: inline-block;">
+                <img class="image_event" src="../img/eventsPoster/pitichingComp.png" alt="">
+            </div>
+            <div class="container info_div col-md-6 float-child" style="display: inline-block;">
+                <h1 class="main-item">Entrepreneurship Blitz <br>Pitching Competition                </h1>
+                <div class="scroll_container">
+                    <div class="common">
+                        <h2 class="subheading">DESCRIPTION</h2>
+                        <p class="para-content"> Unleash your inner entrepreneur at IIITG's Pitching Competition! Pitch the next big startup idea in just 3 minutes! It is your ultimate test of business innovation. Impress the judges with your entrepreneurial thinking and problem-solving abilities.
+
+                            </p>
+                    </div>
+                    <!-- <div class="ek-line-mai date-time-location" style="display: flex;"> -->
+                    <div class="common">
+                        <h2 class="subheading">DATE & TIMING</h2>
+                        <p>5th Nov, 02:00PM-04:00PM</p>
+                    </div>
+                    <div class="common">
+                        <h2 class="subheading">VENUE</h2>
+                        <p>LG</p>
+                    </div>
+
+                    <div class="common">
+                        <h2 class="subheading">TEAM</h2>
+                        <p>Individual</p>
+                    </div>
+                    <div class="common">
+                        <h2 class="subheading">FEES</h2>
+                        <p>Free</p>
+                    </div>
+
+                    <div class="prizes">
+                        <h2 class="prizes1">PRIZES</h2>
+                        <ul>
+                            <li class="ye-bhi-hai-ek">EXCITING PRIZES AND REWARDS</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="register_button">
+                    <a href="#"><button
+                            class="register-button" class="register-button" style="--clr:white">
+                            <span class="register">REGISTER</span>
+                            <i></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container row main_div float-container event-div" id="div315" style="color: white;">
+            <div class="image_div container col-md-6 float-child" style="display: inline-block;">
+                <img class="image_event" src="coding.png" alt="speaker">
+            </div>
+            <div class="container info_div col-md-6 float-child" style="display: inline-block;">
+                <h1 class="main-item">Speaker Session</h1>
+                <div class="scroll_container">
+                    <div class="common">
+                        <h2 class="subheading">DESCRIPTION</h2>
+                        <p class="para-content"> Join us for a dynamic symphony of perspectives, as sports icons, visionary entrepreneurs, astute bureaucrats, and beloved sports personalities converge on a single stage.Witness these exceptional individuals share their remarkable journeys, insights, and strategies for success. Our speaker sessions and panel discussions promise to be a powerful collision of passion, resilience, and vision, where champions from various walks of life come together to reveal the secrets to conquering challenges and achieving greatness.
+
+                        </p>
+                    </div>
+                    <!-- <div class="ek-line-mai date-time-location" style="display: flex;"> -->
+                    <div class="common">
+                        <h2 class="subheading">DATE & TIMING</h2>
+                    
+                        <p>5th Nov, 04:00PM-05:00PM</p>
+                    </div>
+                    <div class="common">
+                        <h2 class="subheading">VENUE</h2>
+                        <p>LG-1</p>
+                    </div>
+
+                    <div class="common">
+                        <h2 class="subheading">TEAM</h2>
+                        <p>Individual</p>
+                    </div>
+                    <div class="common">
+                        <h2 class="subheading">FEES</h2>
+                        <p>Free</p>
+                    </div>
+
+                    <div class="prizes">
+                        <h2 class="prizes1">PRIZES</h2>
+                        <ul>
+                            <li class="ye-bhi-hai-ek">EXCITING PRIZES AND REWARDS</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="register_button">
+                    <a href="#"><button
+                            class="register-button" class="register-button" style="--clr:white">
+                            <span class="register">REGISTER</span>
+                            <i></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container row main_div float-container event-div" id="div316" style="color: white;">
+            <div class="image_div container col-md-6 float-child" style="display: inline-block;">
+                <img class="image_event" src="../img/eventsPoster/eSport.png" alt="">
+            </div>
+            <div class="container info_div col-md-6 float-child" style="display: inline-block;">
+                <h1 class="main-item">E-Sports</h1>
+                <div class="scroll_container">
+                    <div class="common">
+                        <h2 class="subheading">DESCRIPTION</h2>
+                        <p class="para-content"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui nulla natus ex doloremque autem quam incidunt facere est. Deserunt unde omnis tenetur adipisci voluptas! Praesentium voluptatum repellat deserunt iusto? Iusto eligendi asperiores cupiditate velit ducimus, repudiandae dolor quo, assumenda praesentium cumque totam voluptatum natus non repellat placeat error consectetur perferendis.</p>
+                    </div>
+                    <!-- <div class="ek-line-mai date-time-location" style="display: flex;"> -->
+                    <div class="common">
+                        <h2 class="subheading">DATE & TIMING</h2>
+                    
+                        <p>5th Nov, 04:00PM-05:00PM</p>
+                    </div>
+                    <div class="common">
+                        <h2 class="subheading">VENUE</h2>
+                        <p>LG-1</p>
+                    </div>
+
+                    <div class="common">
+                        <h2 class="subheading">TEAM</h2>
+                        <p>Individual</p>
+                    </div>
+                    <div class="common">
+                        <h2 class="subheading">FEES</h2>
+                        <p>Free</p>
+                    </div>
+
+                    <div class="prizes">
+                        <h2 class="prizes1">PRIZES</h2>
+                        <ul>
+                            <li class="ye-bhi-hai-ek">EXCITING PRIZES AND REWARDS</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="register_button">
+                    <a href="#"><button
+                            class="register-button" class="register-button" style="--clr:white">
+                            <span class="register">REGISTER</span>
+                            <i></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
     <script>
         // Function to show a specific div based on URL parameter
@@ -962,7 +851,7 @@
                 targetDiv.style.display = '';
             }
         }
-    
+
         // Read URL parameter and show the corresponding div
         const urlParams = new URLSearchParams(window.location.search);
         const divToShow = urlParams.get('show'); // Assuming "show" is the parameter name
@@ -970,29 +859,30 @@
             showDiv(divToShow);
         }
     </script>
-      <script>
-          const menuButton1 = document.querySelector(".menu-button");
-      const navLinks1 = document.querySelector(".nav-menu");
-    
-      menuButton1.addEventListener("click", () => {
-          navLinks1.classList.toggle("active");
-      });
-      </script>
-    
-      <script>
-      var currentPage = window.location.href;
-      
-      
-      var navLink= document.querySelectorAll('.nav-menu a');
-      
-      navLink.forEach(function(link) {
-          if (link.href === currentPage) {
-              link.classList.add('active');
-          }
-      });
-      </script>
+    <script>
+        const menuButton1 = document.querySelector(".menu-button");
+        const navLinks1 = document.querySelector(".nav-menu");
+
+        menuButton1.addEventListener("click", () => {
+            navLinks1.classList.toggle("active");
+        });
+    </script>
+
+    <script>
+        var currentPage = window.location.href;
+
+
+        var navLink = document.querySelectorAll('.nav-menu a');
+
+        navLink.forEach(function (link) {
+            if (link.href === currentPage) {
+                link.classList.add('active');
+            }
+        });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 </body>
+
 </html>

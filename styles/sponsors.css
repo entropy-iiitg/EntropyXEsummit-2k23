@@ -90,6 +90,12 @@ a
   color:#7D9FC9;
   font-family:'Times New Roman', Times, serif
 } */
+
+.nav-item a {
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+
 .navbar {
   min-height: 100px;
   display: flex;
@@ -341,7 +347,7 @@ a
 
 /* Add a shadow to the card */
 .card:hover {
-  box-shadow: 0px 5px 15px rgb(249, 253, 0);
+  box-shadow: 0px 5px 15px aqua;
   transform: scale(1); /* Scale the card slightly on hover */
 }
 
