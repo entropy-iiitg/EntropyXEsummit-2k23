@@ -50,7 +50,7 @@
 
 
             <span id="festLiveText" class="fest-live-target"></span>
-            <div class="countdown" data-count="2023/11/3">
+            <div class="countdown" data-count="2023/11/3" style="margin-top: 5%;">
                 <div class="launch-time">
                     <div class="space">
                         <span>DAYS</span>
@@ -76,10 +76,13 @@
                 <h2>GET READY TO JOIN...</h2>
 
                 <ul class="social-icon">
-                    <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
-                    <li><a href=""><ion-icon name="logo-twitter"></ion-icon></a></li>
-                    <li><a href=""><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                    <li><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    <li><a href="https://www.instagram.com/entropy_iiitg/?hl=en"><ion-icon
+                                name="logo-instagram"></ion-icon></a></li>
+                    <li><a href="https://www.linkedin.com/company/entropy-iiit-guwahati/"><ion-icon
+                                name="logo-linkedin"></ion-icon></a></li>
+                    <li><a href="https://x.com/Entropy_iiitg?s=20"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100089164894849&ref=xav_ig_profile_web"><ion-icon
+                                name="logo-facebook"></ion-icon></a></li>
                 </ul>
             </div>
 
@@ -473,7 +476,7 @@
                 </svg>
 
             </div>
-            
+
         </div>
         <!-- partial -->
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
@@ -496,22 +499,22 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="../js_final/home.js"></script>
     <script>
-    var frames = document.querySelectorAll('.frame');
-    var currentFrame = 0;
-    var previousFrame = 7;
+        var frames = document.querySelectorAll('.frame');
+        var currentFrame = 0;
+        var previousFrame = 7;
 
-    setInterval(function () {
-        frames[currentFrame].style.visibility = 'visible'
-        frames[previousFrame].style.visibility = 'hidden'
+        setInterval(function () {
+            frames[currentFrame].style.visibility = 'visible'
+            frames[previousFrame].style.visibility = 'hidden'
 
-        if (currentFrame < frames.length - 1) {
-        currentFrame += 1;
-        previousFrame = currentFrame - 1;
-        } else {
-        currentFrame = 0;
-        previousFrame = 7;
-        }
-    }, 75)
+            if (currentFrame < frames.length - 1) {
+                currentFrame += 1;
+                previousFrame = currentFrame - 1;
+            } else {
+                currentFrame = 0;
+                previousFrame = 7;
+            }
+        }, 75)
 
         var bg = document.querySelector('.item-bg');
         var items = document.querySelectorAll('.news__item');

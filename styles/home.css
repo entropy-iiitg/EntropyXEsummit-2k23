@@ -49,6 +49,7 @@ html {
     margin-left: 5%;
   }
 }
+
 .home {
   overflow: visible;
 }
@@ -461,7 +462,8 @@ h1 {
     white-space: nowrap;
   }
   .launch-time {
-    margin-left: 15%;
+    margin-left: -15%;
+    gap: 5px;
   }
   .searchbar {
     margin-right: 20%;
@@ -540,10 +542,29 @@ h1 {
 }
 
 @media (max-width: 590px) {
+
+  .all-of-events{
+    width: 100% !important;
+  }
+  
+  .countdown{
+    margin-left:-3%;
+  }
   .menu-button {
     display: block;
     font-size: 30px;
-    margin-left: 95%;
+    position: absolute;
+    right: 0;
+    left: 60%;
+  }
+
+  .social-icon{
+    margin-left: 0;
+  }
+
+  .searchbar{
+    width: 100%;
+    
   }
 
   .nav-menu {
@@ -573,8 +594,8 @@ h1 {
     position: absolute;
     top: 0;
     left: 0;
-    width: 155%;
-    height: 155%;
+    width: 100%;
+    height: 120%;
     object-fit: cover;
   }
 
@@ -583,10 +604,13 @@ h1 {
     white-space: nowrap;
     width: 100%; /* Optional: Ensure the text stays within its container */
   }
+  .space p {
+    font-size: 30px;
+  }
 
   .launch-time {
-    gap: 10px;
-    margin-right: 26%;
+    margin-left: -50%;
+    gap: 5px;
   }
   .space {
     text-align: center;
@@ -604,7 +628,7 @@ h1 {
   }
 
   .searchbar {
-    width: 700px;
+    width: 100%;
     /* height: 70px; */
     margin-left: 1000%; /*iska dekhna h*/
   }
@@ -767,7 +791,7 @@ h1 {
   .nav-menu.active {
     display: flex;
     /* position: fixed; */
-    left: 0;
+    left: -15%;
     z-index: 2;
   }
 
@@ -778,7 +802,7 @@ h1 {
   }
 
   .searchbar {
-    margin-left: 10%;
+    margin-left: -5%;
   }
 
   .explore-button {
@@ -826,7 +850,7 @@ h1 {
   }
 
   .space p {
-    font-size: 90px;
+    font-size: 45px;
   }
 }
 @import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,700&subset=latin-ext");
@@ -857,6 +881,7 @@ h1 {
   font-size: 64px;
   margin-left: 116%;
   margin-bottom: -40%;
+  border: none;
   /* color: white;
   text-decoration: none;
    font-size: 10em; 
