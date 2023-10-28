@@ -38,6 +38,26 @@
 
   </head>
   <body style="margin: 0%;">
+    <style>
+      .mobile {
+    display: block;
+}
+
+.desktop {
+    display: none;
+}
+
+/* Media query for screens with a minimum width of 768px (adjust as needed) */
+@media screen and (min-width: 768px) {
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+}
+    </style>
 
     <div id="preloader" style="margin-top: 0;">
 
@@ -74,9 +94,15 @@
         <h3 class="date" style="color: wheat; font-family: 'Kreon', serif; font-size: 2.5rem;"><span class="" id="rev1">03-05</span> <span class="" id="rev2">November,</span> <span class="" id="rev3">2023.</span></h3>
       </div>
       
-      <div class="" id="button_rev">
+      <div class="desktop" id="button_rev">
         <a href="html/home.html" style="--clr:#1e9bff" onmouseover="changehtml()" onmouseleave="rechangehtml()">
           <span>VIEW MORE</span>
+          <i></i>
+        </a>
+      </div>
+      <div class="mobile" id="button_rev2">
+        <a href="html/events.html" style="--clr:#1e9bff" onmouseover="changehtml()" onmouseleave="rechangehtml()">
+          <span>EXPLORE EVENTS</span>
           <i></i>
         </a>
       </div>
@@ -101,6 +127,7 @@
       let rev2 = document.getElementById("rev2");
       let rev3 = document.getElementById("rev3");
       let button_rev = document.getElementById("button_rev");
+      let button_rev2 = document.getElementById("button_rev2");
       window.addEventListener("load", function(){
         loader.style.display = "none";
         slider.classList.add("slide_right");
@@ -111,6 +138,7 @@
         rev2.classList.add("reveal1");
         rev3.classList.add("reveal1");
         button_rev.classList.add("button_reveal");
+        button_rev2.classList.add("button_reveal");
       })
     </script>
   </body>
