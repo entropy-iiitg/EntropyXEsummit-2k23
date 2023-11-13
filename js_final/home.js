@@ -10,7 +10,7 @@ var x = setInterval(function () {
         document.getElementById("minutes").innerHTML = "00  :";
         document.getElementById("seconds").innerHTML = "00";
         // Display "The fest is live" text
-        document.getElementById("festLiveText").textContent = "The fest is live";
+        document.getElementById("festLiveText").textContent = "We will be back!!";
         document.querySelector(".countdown").style.display = "none";
         // Add the "fest-live" class to elements you want to style differently
         var elementsToStyle = document.querySelectorAll(".fest-live-target");
